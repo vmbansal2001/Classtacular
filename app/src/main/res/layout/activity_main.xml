@@ -7,78 +7,168 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
+        android:background="@color/white"
         android:orientation="vertical"
         tools:ignore="MissingConstraints">
 
-        <ImageView
-            android:id="@+id/settings_img"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:layout_gravity="right"
-            android:padding="8dp"
-            android:src="@drawable/settings_logo" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:background="@drawable/main_background">
+
+            <ImageView
+                android:id="@+id/student_photo"
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:layout_centerVertical="true"
+                android:maxWidth="150dp"
+                android:maxHeight="150dp"
+                android:onClick="select_student_photo"
+                android:padding="16dp"
+                android:src="@drawable/student_photo_img" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_toRightOf="@id/student_photo"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/student_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:fontFamily="sans-serif-black"
+                    android:text="Vipul Bansal"
+                    android:textSize="24sp" />
+
+                <TextView
+                    android:id="@+id/branch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:text="CSE"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/Enrollment_No."
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:text="02337189471"
+                    android:textSize="20sp" />
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/settings_img"
+                android:onClick="OpenSettingsPane"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+
+                android:src="@drawable/settings_logo" />
+
+        </RelativeLayout>
+
 
         <RelativeLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal">
 
-            <ImageView
-                android:id="@+id/student_photo"
-                android:layout_width="150dp"
-                android:layout_height="150dp"
-                android:maxWidth="150dp"
-                android:maxHeight="150dp"
-                android:onClick="select_student_photo"
-                android:src="@drawable/student_photo_img" />
-
-            <EditText
-                android:id="@+id/student_name"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/student_photo"
-                android:layout_centerHorizontal="true"
-                android:text="Student Name" />
-
-            <EditText
-                android:id="@+id/Enrollment_No."
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/student_name"
-                android:layout_centerHorizontal="true"
-                android:text="Enrollment No." />
 
         </RelativeLayout>
 
         <ImageView
             android:layout_width="match_parent"
-            android:layout_height="120dp"
-            android:src="@color/white" />
+            android:layout_height="1dp"
+            android:src="@color/black" />
 
-        <Button
-            android:id="@+id/AttendanceButton"
-            android:layout_width="150dp"
+        <RelativeLayout
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:onClick="OpenAttendanceManagerActivity"
-            android:text="Attendance" />
+            android:layout_gravity="center_horizontal">
 
-        <Button
-            android:id="@+id/NotesButton"
-            android:layout_width="150dp"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:onClick="OpenNotesAreaActivity"
-            android:text="Notes" />
+            <RelativeLayout
+                android:id="@+id/AttendanceButton"
+                android:layout_width="150dp"
+                android:layout_height="200dp">
 
-        <Button
-            android:id="@+id/TimeTableButton"
-            android:layout_width="150dp"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:onClick="OpenTimeTableActivity"
-            android:text="Time Table" />
+                <ImageView
+                    android:layout_width="140dp"
+                    android:layout_height="170dp"
+                    android:layout_margin="24dp"
+                    android:onClick="OpenAttendanceManagerActivity"
+                    android:src="@drawable/mainscreenrectanglebackground" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:fontFamily="sans-serif-black"
+                    android:text="Attendance"
+                    android:textColor="@color/black"
+                    android:textSize="17sp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="150dp"
+                android:layout_height="200dp"
+                android:layout_toRightOf="@id/AttendanceButton">
+
+                <ImageView
+                    android:id="@+id/NotesButton"
+                    android:layout_width="140dp"
+                    android:layout_height="170dp"
+                    android:layout_margin="24dp"
+                    android:onClick="OpenNotesAreaActivity"
+                    android:src="@drawable/mainscreenrectanglebackground" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:fontFamily="sans-serif-black"
+                    android:text="Notes"
+                    android:textColor="@color/black"
+                    android:textSize="17sp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="150dp"
+                android:layout_height="200dp"
+                android:layout_below="@id/AttendanceButton">
+
+                <ImageView
+                    android:id="@+id/TimeTableButton"
+                    android:layout_width="140dp"
+                    android:layout_height="200dp"
+                    android:layout_margin="24dp"
+                    android:onClick="OpenTimeTableActivity"
+                    android:src="@drawable/mainscreenrectanglebackground"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:fontFamily="sans-serif-black"
+                    android:text="Time Table"
+                    android:textColor="@color/black"
+                    android:textSize="17sp" />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
 
     </LinearLayout>
 

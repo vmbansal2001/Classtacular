@@ -12,7 +12,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Classtacular">
-        <activity android:name=".AttendanceManager"></activity>
+        <activity android:name=".settings_pane"></activity>
+        <activity android:name=".AttendanceManager" />
         <activity android:name=".AddNotesPane" />
         <activity android:name=".NotesArea" />
         <activity android:name=".TimeTableActivity" />

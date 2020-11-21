@@ -18,7 +18,10 @@ public class AttendanceManager extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_attendance_manager);
-
+        try {
+            this.getSupportActionBar().hide();
+        } catch (NullPointerException e) {
+        }
     }
 
     public void addSubject(View view) {

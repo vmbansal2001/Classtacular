@@ -13,7 +13,8 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="120dp"
+            android:background="@drawable/rounded_rectangle2"
             android:orientation="horizontal">
 
             <RelativeLayout
@@ -31,7 +32,9 @@
                     android:id="@+id/attendancepercent"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:paddingLeft="22dp"
+                    android:layout_centerHorizontal="true"
+                    android:fontFamily="sans-serif-black"
+                    android:paddingLeft="8dp"
                     android:paddingTop="42dp"
                     android:textColor="@color/white"
                     android:textSize="25sp" />
@@ -47,59 +50,57 @@
                 <TextView
                     android:id="@+id/subjectname"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_horizontal"
+                    android:layout_height="0dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
                     android:fontFamily="sans-serif-black"
+                    android:padding="4dp"
                     android:text="Subject"
                     android:textColor="@color/black"
-                    android:textSize="25sp" />
+                    android:textSize="24sp" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
                     android:paddingTop="8dp">
 
                     <ImageView
                         android:id="@+id/presentButton"
                         android:layout_width="0dp"
-                        android:layout_height="30dp"
+                        android:layout_height="35dp"
                         android:layout_weight="1"
                         android:src="@drawable/tick" />
+
+                    <TextView
+                        android:id="@+id/noOfClassesRecord"
+                        android:layout_width="0dp"
+                        android:layout_height="50dp"
+                        android:layout_weight="2"
+                        android:fontFamily="sans-serif-black"
+                        android:gravity="center"
+                        android:text="13/17"
+                        android:textSize="24sp" />
 
                     <ImageView
                         android:id="@+id/absentButton"
                         android:layout_width="0dp"
-                        android:layout_height="30dp"
+                        android:layout_height="35dp"
                         android:layout_weight="1"
                         android:src="@drawable/cross" />
 
 
                 </LinearLayout>
 
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:paddingTop="8dp">
-
-                    <TextView
-                        android:id="@+id/present"
-                        android:layout_width="0dp"
-                        android:layout_height="20dp"
-                        android:layout_weight="1"
-                        android:gravity="center_horizontal" />
-
-                    <TextView
-                        android:id="@+id/absent"
-                        android:layout_width="0dp"
-                        android:layout_height="20dp"
-                        android:layout_weight="1"
-                        android:gravity="center_horizontal" />
-
-
-                </LinearLayout>
-
             </LinearLayout>
         </LinearLayout>
+
+        <TextView
+            android:id="@+id/classesInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal" />
 
         <ProgressBar
             android:id="@+id/attendanceprogress"

@@ -14,6 +14,12 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        try {
+            this.getSupportActionBar().hide();
+        } catch (NullPointerException e) {
+        }
+
     }
 
 
@@ -47,4 +53,8 @@ public class MainActivity extends AppCompatActivity {
         startActivity(i);
     }
 
+    public void OpenSettingsPane(View view) {
+        Intent i = new Intent(MainActivity.this, settings_pane.class);
+        startActivity(i);
+    }
 }

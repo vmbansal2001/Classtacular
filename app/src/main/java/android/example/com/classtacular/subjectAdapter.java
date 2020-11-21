@@ -5,7 +5,6 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
-import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.ProgressBar;
 import android.widget.TextView;
@@ -44,24 +43,42 @@ public class subjectAdapter extends ArrayAdapter<subject> {
         String per = percent + "%";
         attendancepercent.setText(per);
 
+        TextView attendanceRecord = (TextView) listItemView.findViewById(R.id.noOfClassesRecord);
+        String record = currentSubject.getMpresent() + "/" + (currentSubject.getMpresent() + currentSubject.getMabsent());
+        attendanceRecord.setText(record);
+
         ProgressBar bar = (ProgressBar) listItemView.findViewById(R.id.attendanceprogress);
         bar.setProgress(percent);
 
-        TextView presentno = (TextView) listItemView.findViewById(R.id.present);
-        presentno.setText(currentSubject.getMpresent() + "");
-
-        TextView absentno = (TextView) listItemView.findViewById(R.id.absent);
-        absentno.setText(currentSubject.getMabsent() + "");
+        TextView classInfo = (TextView) listItemView.findViewById(R.id.classesInfo);
+        String info = "";
+        if (percent < 77) {
+            info = "You Can't Miss Any More Classes";
+        } else {
+            info = "You Can Miss a Class";
+        }
+        classInfo.setText(info);
 
         ImageView plus = (ImageView) listItemView.findViewById(R.id.presentButton);
         plus.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 currentSubject.incrementPresent();
-                presentno.setText(currentSubject.getMpresent() + "");
                 int percent = ((currentSubject.getMpresent()) * 100) / (currentSubject.getMabsent() + currentSubject.getMpresent());
                 String per = percent + "%";
                 attendancepercent.setText(per);
+
+                String record = currentSubject.getMpresent() + 1 + "/" + (currentSubject.getMpresent() + currentSubject.getMabsent() + 1);
+                attendanceRecord.setText(record);
+
+                String info = "";
+                if (percent < 77) {
+                    info = "You Can't Miss Any More Classes";
+                } else {
+                    info = "You Can Miss a Class";
+                }
+                classInfo.setText(info);
+
                 bar.setProgress(percent);
             }
         });
@@ -71,10 +88,21 @@ public class subjectAdapter extends ArrayAdapter<subject> {
             @Override
             public void onClick(View view) {
                 currentSubject.incrementAbsent();
-                absentno.setText(currentSubject.getMabsent() + "");
                 int percent = ((currentSubject.getMpresent()) * 100) / (currentSubject.getMabsent() + currentSubject.getMpresent());
                 String per = percent + "%";
                 attendancepercent.setText(per);
+
+                String record = currentSubject.getMpresent() + 1 + "/" + (currentSubject.getMpresent() + currentSubject.getMabsent() + 1);
+                attendanceRecord.setText(record);
+
+                String info = "";
+                if (percent <= 75) {
+                    info = "You Can't Miss Any More Classes";
+                } else {
+                    info = "You Can Miss a Class";
+                }
+                classInfo.setText(info);
+
                 bar.setProgress(percent);
             }
         });
