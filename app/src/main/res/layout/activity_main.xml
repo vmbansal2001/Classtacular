@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:ignore="MissingConstraints">
+
+        <ImageView
+            android:id="@+id/settings_img"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="right"
+            android:padding="8dp"
+            android:src="@drawable/settings_logo" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal">
+
+            <ImageView
+                android:id="@+id/student_photo"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:maxWidth="150dp"
+                android:maxHeight="150dp"
+                android:onClick="select_student_photo"
+                android:src="@drawable/student_photo_img" />
+
+            <EditText
+                android:id="@+id/student_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/student_photo"
+                android:layout_centerHorizontal="true"
+                android:text="Student Name" />
+
+            <EditText
+                android:id="@+id/Enrollment_No."
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/student_name"
+                android:layout_centerHorizontal="true"
+                android:text="Enrollment No." />
+
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:src="@color/white" />
+
+        <Button
+            android:id="@+id/AttendanceButton"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:onClick="OpenAttendanceManagerActivity"
+            android:text="Attendance" />
+
+        <Button
+            android:id="@+id/NotesButton"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:onClick="OpenNotesAreaActivity"
+            android:text="Notes" />
+
+        <Button
+            android:id="@+id/TimeTableButton"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:onClick="OpenTimeTableActivity"
+            android:text="Time Table" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

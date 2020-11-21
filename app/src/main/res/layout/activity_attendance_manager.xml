@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AttendanceManager">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:onClick="addSubject"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="70dp"
+                android:paddingLeft="8dp"
+                android:src="@drawable/plus" />
+
+            <EditText
+                android:id="@+id/addSubjectName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:fontFamily="sans-serif-black"
+                android:hint="Add Subject"
+                android:paddingLeft="16dp"
+                android:textColor="@color/black"
+                android:textSize="40sp" />
+
+        </LinearLayout>
+
+        <ImageButton
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:src="@color/black" />
+
+        <ListView
+            android:id="@+id/subjectList"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="9" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
