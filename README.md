@@ -28,4 +28,5 @@ TimeTable Manager
 
 - TimeTable Manager requires us to upload a photograph of our timetable directly from the storage memory.
   This feature helps to keep track of our upcoming classes with ease.
-
+  
+![alt text](https://hacksrm.tech/assets/images/themes/open-innovation.svg)
