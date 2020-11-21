@@ -68,7 +68,7 @@ public class subjectAdapter extends ArrayAdapter<subject> {
                 String per = percent + "%";
                 attendancepercent.setText(per);
 
-                String record = currentSubject.getMpresent() + 1 + "/" + (currentSubject.getMpresent() + currentSubject.getMabsent() + 1);
+                String record = currentSubject.getMpresent() + "/" + (currentSubject.getMpresent() + currentSubject.getMabsent() );
                 attendanceRecord.setText(record);
 
                 String info = "";
@@ -92,7 +92,7 @@ public class subjectAdapter extends ArrayAdapter<subject> {
                 String per = percent + "%";
                 attendancepercent.setText(per);
 
-                String record = currentSubject.getMpresent() + 1 + "/" + (currentSubject.getMpresent() + currentSubject.getMabsent() + 1);
+                String record = currentSubject.getMpresent() + "/" + (currentSubject.getMpresent() + currentSubject.getMabsent());
                 attendanceRecord.setText(record);
 
                 String info = "";
