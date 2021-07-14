@@ -48,10 +48,10 @@ TimeTable Manager | Helps to keep a track of Lectures
 > TimeTable Manager requires us to fill out the required rows and columns.
 > This feature helps to keep track of our upcoming classes with ease.
   
-###Settings Panel
+### Settings Panel
 > We have the Settings Panel to report any issue to the developer or to suggest a feature
 <img src="https://github.com/vmbansal2001/Classtacular/blob/main/App%20Screenshots/Screenshot_1626284224.png" width="250" >  
   
-## APK File
+# APK File
 Explore the app by yourself and let these handy features come to your life.
 [Download the APK using this link](https://github.com/vmbansal2001/Classtacular/raw/main/Classtacular%20APK.apk)
