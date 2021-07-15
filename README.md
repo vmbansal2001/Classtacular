@@ -1,26 +1,21 @@
 # Classtacular
-Our project helps students to keep a track of their attendance and manage their notes efficiently 
-with the help of an android application. It aims to create a helpful platform for all students.
-Our app basically provides 3 functionalities: 
+This android application helps students to keep a track of their attendance and manage their notes efficiently.
+It aims to create a helpful platform for all students.
 
-* **The Attendance Manager**
-* **Notes Area**
-* **TimeTable Manager**
+#### The app basically provides 3 functionalities: 
+> * **The Attendance Tracker**
+> * **The Notes Area**
+> * **TimeTable Manager**
 
-The app has an integrated Attendance Manager which displays attendance records in a graphical manner which looks appealing, easy to look at &amp; 
+The app has an integrated Attendance Manager which displays attendance records in a graphical manner which looks appealing, easy to use &amp; 
 convenient to track your attendance. 
-The upload notes area provides for easy upload of notes by users, and also allows the users to share notes amongst themselves (specially for IPU Students using NotesHub Platform). The TimeTable Manager allows the user to upload their timetable. Our app is student friendly and everyone ranging from school to university students can make use of it.
-
-The era of COVID-19 has forced educational institutions to quickly adapt to the new normal. 
-With students being required to stay at home, remote learning classes have emerged as the best way to continue education during these unprecedented times. 
-One of the biggest challenges that students face with this new format is tracking attendance and keeping their notes intact.
-Our project aims to create a helpful platform for all school and university students to solve this problem with the help of an android application.
+The upload notes area provides for easy upload of notes by users, and also allows the users to share notes amongst themselves (specially for IPU Students using NotesHub Platform). The TimeTable Manager allows the user to upload their timetable. This app is student friendly and everyone ranging from school to university students can make use of it.
 
 <img src="https://github.com/vmbansal2001/Classtacular/blob/main/App%20Screenshots/Screenshot_1626283910.png" width="250" >
 
 ## Features
 
-Our app CLASSTACULAR basically provides 3 fuctionalities:
+CLASSTACULAR basically provides 3 fuctionalities:
 
 Functionality | Usage
 -------- | ---------
@@ -28,10 +23,10 @@ The Attendance Tracker | Helps to keep record of Attendance
 The Notes Area | Helps to Manage the Notes
 TimeTable Manager | Helps to keep a track of Lectures
 <div>
-<img src="https://github.com/vmbansal2001/Classtacular/blob/main/App%20Screenshots/Screenshot_1626284077.png" width="230" >
-<img src="https://github.com/vmbansal2001/Classtacular/blob/main/App%20Screenshots/Screenshot_1626284094.png" width="230" >
-<img src="https://github.com/vmbansal2001/Classtacular/blob/main/App%20Screenshots/Screenshot_1626284110.png" width="230" >
-<img src="https://github.com/vmbansal2001/Classtacular/blob/main/App%20Screenshots/Screenshot_1626284211.png" width="230" >  
+<img src="https://github.com/vmbansal2001/Classtacular/blob/main/App%20Screenshots/Screenshot_1626284077.png" width="200" >
+<img src="https://github.com/vmbansal2001/Classtacular/blob/main/App%20Screenshots/Screenshot_1626284094.png" width="200" >
+<img src="https://github.com/vmbansal2001/Classtacular/blob/main/App%20Screenshots/Screenshot_1626284110.png" width="200" >
+<img src="https://github.com/vmbansal2001/Classtacular/blob/main/App%20Screenshots/Screenshot_1626284211.png" width="200" >  
 <div>
 
 ### Attendance Tracker
